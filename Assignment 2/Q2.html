@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 2</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Array</h1>
+
+    <h2>Print the elements of an array using toString()</h2>
+
+    <p id="toString"></p>
+
+    <h2>Print the elements of an array using join()</h2>
+
+    <p id="join"></p>
+
+    <h2>Print the elements of an array using the format index: value</h2>
+
+    <p id="index:value"></p>
+
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("toString").innerHTML = fruits.toString();
+        document.getElementById("join").innerHTML = fruits.join("&");
+
+        for (let i = 0; i < fruits.length; i++){
+            document.getElementById("index:value").innerHTML += i + ": " + fruits[i] + "<br>";
+        }
+
+    </script>
+    
+</body>
+</html>

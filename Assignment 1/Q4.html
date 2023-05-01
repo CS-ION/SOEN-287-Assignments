@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4</title>
+
+    <style>
+
+        .info{
+            border: 5px solid green;
+            background-color:aqua;
+            font-weight: bold;
+            color: yellowgreen;
+        }
+
+        .leg_info{
+            font-weight: bold;
+            color: green;
+        }
+
+        .surv{
+            border: 5px solid red;
+            background-color: pink;
+            font-weight: bold;
+            color: tomato;
+        }
+
+        .leg_surv{
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: yellow;">
+
+    <table>
+        <tr>
+            <td><h1>Music Lover's Survey</h1></td>
+            <td>
+                <a href="https://pixabay.com/photos/record-player-vinyl-1851576/">
+                <img src="https://cdn.pixabay.com/photo/2016/11/23/00/58/record-player-1851576_960_720.jpg" 
+                alt="Image taken from https://cdn.pixabay.com"
+                width="100" height="100">
+                </a>
+            </td>
+        </tr>
+
+    </table>
+
+    <form>
+
+        <fieldset name="personal_info" class="info">
+        <legend class="leg_info">Music Lover's Personal Information</legend>
+
+        <label>First name
+        <input type="text" name="fname" id="fname">
+        </label><br><br>
+
+        <label>Family name
+        <input type="text" name="lname" id="lname">
+        </label><br><br>
+
+        Gender:
+
+        <label>
+        <input type="radio" name="gender" value="female" id="female">Female
+        </label>
+
+        <label>
+        <input type="radio" name="gender" value="male" id="male">Male
+        </label><br><br>
+
+        Which age category are you from?
+        <select name = "age-category">
+            <option> Less than 18 years </option>
+            <option> 18-30 </option>
+            <option> 30-55 </option>
+            <option> Above 55 years </option>
+        </select><br><br>
+
+        <label>Email
+        <input type="text" name="email" id="email">
+        </label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset name="survey" class="surv">
+        <legend class="leg_surv">Survey Questions</legend>
+
+        Which type of music do you listen to? (Pick as many as apply)<br>
+
+        <label> 
+            <input type = "checkbox" name ="music_type" value = "blues" id="blues">Blues 
+        </label>
+        <label> 
+            <input type = "checkbox" name ="music_type" value = "classical_music" id="classical_music">Classical Music
+        </label>
+        <label> 
+            <input type = "checkbox" name ="music_type" value = "electronic_music" id="electronic_music">Electronic Music 
+        </label><br>
+        <label> 
+            <input type = "checkbox" name ="music_type" value = "hiphop_rap" id="hiphop_rap">Hip-Hop/Rap
+        </label>
+        <label> 
+            <input type = "checkbox" name ="music_type" value = "Pop" id="Pop">Pop (Popular Music) 
+        </label>
+        <label> 
+            <input type = "checkbox" name ="music_type" value = "reggae" id="reggae">Reggae
+        </label><br>
+        <label> 
+            <input type = "checkbox" name ="music_type" value = "other" id="other">Other 
+        </label><br><br>
+        
+        List your 3 favorite artist/bands:<br>
+
+        <label>
+        <input type="text" name="favs1" id="favs1">
+        </label>
+
+        <label>
+        <input type="text" name="favs2" id="favs2">
+        </label>
+
+        <label>
+        <input type="text" name="favs3" id="favs3">
+        </label><br><br>
+        
+        If you were to win tickets which show would you like 2 tickets to?<br>
+
+        <label>
+        <input type="radio" name="concerts" value="bFloyd" id="bFloyd">BRIT FLOYD (March 24, 2016)
+        </label>
+
+        <label>
+        <input type="radio" name="concerts" value="iMaiden" id="iMaiden">IRON MAIDEN (April 1, 2016)
+        </label>
+
+        <label>
+        <input type="radio" name="concerts" value="jJackson" id="jJackson">JANET JACKSON (June 17, 2016)
+        </label>
+
+        <label>
+        <input type="radio" name="concerts" value="adele" id="adele">ADELE (September 30, 2016)
+        </label>
+
+        </fieldset>
+
+        <br><br>Thank you for taking the time to fill out our survey!<br><br>
+        <input type = "submit" value = "Submit" id="submit">
+        <input type = "reset" value = "Reset" id="reset">
+    </form>
+</body>
+</html>

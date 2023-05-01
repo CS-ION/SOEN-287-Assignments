@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4</title>
+
+    <style>
+        input[type="text"] {
+            width: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Order Books Online</h1>
+    <form> 
+
+        <fieldset name="orderBooksOnline">
+
+        <table>
+
+            <tr>
+                <th>Book</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td><label for="book1" id="l1">Goosebumps</label></td>
+                <td><input type="text" name="book1" id="book1"></td>
+                <td id="p1">$24</td>
+            </tr>
+
+            <tr>
+                <td><label for="book2" id="l2">Nancy Drew</label></td>
+                <td><input type="text" name="book2" id="book2"></td>
+                <td id="p2">$25</td>
+            </tr>
+
+            <tr>
+                <td><label for="book3" id="l3">Hardy Boys</label></td>
+                <td><input type="text" name="book3" id="book3"></td>
+                <td id="p3">$26</td>
+            </tr>
+
+        </table>
+        <br><br>
+
+        <input type="submit" value="Calculate your order" onclick="calculate()">
+      
+        </fieldset>
+
+    </form>
+
+    <p id="result"></p>
+
+    <script src="Q4.js"></script>
+
+</body>
+</html>
